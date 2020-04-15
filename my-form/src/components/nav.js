@@ -4,7 +4,7 @@ import "./nav.css";
 const Nav = props => (
     <div className='nav'>
         <div className="new_greeting">
-            <p>Welcome, {props.name}</p>
+            <p>Welcome {props.name}</p>
         </div>
     </div>
 )

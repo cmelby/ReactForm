@@ -1,4 +1,4 @@
-import React, {Component} from 'reeact';
+import React, {Component} from 'react';
 import "./landing.css";
 import Nav from "../components/nav";
 import Input from "../components/input";
@@ -20,10 +20,10 @@ class Landing extends Component {
         return (
             <div className="landing">
                 <Nav name={this.state.name}/>
-                <div className="landing_form">
+                <div className="landing__form">
                     <form>
                         <Input name="name" type="text" change={this.handleChange}/>
-                        <div className="landing_submit-btn">
+                        <div className="landing__submit-btn">
                             <Input type="submit" value="Join"/>
                         </div>
                     </form>
