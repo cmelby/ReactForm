@@ -16,6 +16,20 @@ class Landing extends Component {
         })
     }
 
-
-
+    render() {
+        return (
+            <div className="landing">
+                <Nav name={this.state.name}/>
+                <div className="landing_form">
+                    <form>
+                        <Input name="name" type="text" change={this.handleChange}/>
+                        <div className="landing_submit-btn">
+                            <Input type="submit" value="Join"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        )
+    }
 }
+export default Landing;
